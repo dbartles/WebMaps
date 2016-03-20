@@ -2,47 +2,61 @@
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
 <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
-<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
-
+<link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'> 
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,900' rel='stylesheet' type='text/css'>
 
 <style>
+    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+    
     body {
-        background: #f5f5f5;
-        font-family: Imprima, sans-serif;
+        background: #e9ece5;
+        font-family: 'Work Sans', sans-serif;
     }
     
     header {
         width: 100%;
         min-width: 800px;
         margin: 0 auto;
-        background: steelblue;
+        background: #c0dfd9;
         padding: 15px 0 20px;
+        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	   -moz-animation:fadeIn ease-in 1;
+	   animation:fadeIn ease-in 1;
+        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	   -moz-animation-fill-mode:forwards;
+	   animation-fill-mode:forwards;
+ 
+	   -webkit-animation-duration:1s;
+	   -moz-animation-duration:1s;
+	   animation-duration:1s;
     }
     
     h1 {
-        font-family: Dosis, sans-serif;
+        font-family: 'Work Sans', sans-serif;
         color: #375671;
         width: 80%;
         margin: 0 auto;
-        color: whitesmoke;
+        color: #312c32;
     }
     
     h2 {
-        font-family: Dosis, sans-serif;
+        font-family: 'Work Sans', sans-serif;
         color: #375671;
         width: 80%;
         margin: 0 auto;
-        color: whitesmoke;
+        color: #312c32;
     }
     
     h3 {
-        font-family: Dosis, sans-serif;
-        color: #003d71
+        font-family: 'Work Sans', sans-serif;
+        color: #312c32
     }
     
     p {
-        font-size: .9em;
-        color: #375671;
+        font-size: 1.2em;
+        color: #3b3a36;
     }
     
     ul {
@@ -54,7 +68,7 @@
     
     a,
     a:visited {
-        color: #003d71;
+        color: #312c32;
     }
     
     .project {
@@ -68,6 +82,7 @@
         content: "";
         display: table;
         clear: both;
+        color: #b3c2bf;
     }
     
     .project-image {
@@ -77,15 +92,33 @@
         float: left;
         margin-right: 20px;
         border: 2px solid #dddddd;
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
     }
+    .project-image:hover {
+       opacity: 0.5;
+    }
+    
     .project-image-portrait {
         width: 240px;
         height: 388px;
         background: white;
         float: left;
-        margin-right: 20px;
+        margin-right: 90px;
+        margin-left: 80px;
         border: 2px solid #dddddd;
+        opacity: 1;
+        transition: opacity .25s ease-in-out;
+        -moz-transition: opacity .25s ease-in-out;
+        -webkit-transition: opacity .25s ease-in-out;
     }
+    .project-image-portrait:hover {
+       opacity: 0.5;
+    }
+
+
 </style>
 
 <body>
@@ -94,10 +127,9 @@
         <h2>Web Cartography by Devin Bartley</h2>
     </header>
     <section class="Project">
-        <a href="#"><img src="images/Thumbs/PowerPlants_Thumb2.jpg" alt="Power Plant Map" class="project-image" /></a>
+        <a href="http://devinleebartley.github.io/Zero-Emissions-Power/"><img src="images/Thumbs/PowerPlants_Thumb2.jpg" alt="Power Plant Map" class="project-image" /></a>
         <h3><a target = "_blank" href="http://devinleebartley.github.io/Zero-Emissions-Power/">Zero Emissions Power Plants in the United States</a></h3>
-        <p>This map is an example of a leaflet based web map with interactive features created in Javascript</p>
-        <p>This map was created by changing the power generation capcity numbers in the power plant dataset to proportional symbols. In Javascript I created a spotlight filter with a 500 km radius is created when the user clicks on the map, and summarizing statistics about the area within the filter are displayed. Also unique popups were created to show the name and generation capacity of individual powerplants.</p>
+        <p>This is a Leaflet.js based web map with interactive features created in JavaScript. The map was created by converting the power generation capcity numbers in the power plant dataset to proportional symbols. In Javascript I created a spotlight filter with a 500 km radius is created when the user clicks on the map, and summarizing statistics about the area within the filter are displayed. Also unique popups were created to show the name and generation capacity of individual powerplants.</p>
         <ul>
             <li>See the Map: <a target="_blank" href="http://devinleebartley.github.io/Zero-Emissions-Power/" /> Zero Emissions Power Plants in the United States</a>
             </li>
@@ -105,15 +137,13 @@
             </li>
         </ul>
         <br>
-        <br>
-        <br>
-        <br>
+        
+        
     </section>
     <section class="Project">
         <a href="Maps/BreweriesMap_v3.pdf"><img src="images/Thumbs/brewery_thumb.jpg" alt="Brewery Map" class="project-image" /></a>
         <h3><a target="_blank" href="Maps/BreweriesMap_v3.pdf"> Map of Breweries in North America</a></h3>
-        <p>This map is an example of using hexbins to display point density by area.</p>
-        <p>This map was created in QGIS using a spatial join method. Since the hexbin areas are of equal size, they produce a visually appropriate heat map showing the density of points by area. 
+        <p>This map is a QGIS hexbin heat map created by using a spatial join method. Since the hexbin areas are of equal size, they produce a visually appealing heat map showing the density of points by area. 
         <br>
         </p>
         <ul>
@@ -130,8 +160,7 @@
     <section class="Project">
         <a href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map"><img src="images/Thumbs/Cancer_Thumb.jpg" alt="Cancer Rate Map" class="project-image" /></a>
         <h3><a target="_blank" href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map">Map of Cancer Rates by County in the United States</a></h3>
-        <p>This map was created in CartoDB by joining the cancer profiles tables to US Census Bureau Tiger county linework. This map showcases some custom labels and color schemes are created using CSS and HTML. I reprojected the map to Albers Equal Area by using an SQL query within the CartoDB layer. </p>
-        <p>This map was created by...</p>
+        <p>This map was created in CartoDB by joining the cancer profiles tables to US Census Bureau Tiger linework. This map showcases custom labels and color schemes created using CSS and HTML within the CartoDB framework. I reprojected the map to Albers Equal Area by using an SQL query within the CartoDB layer. </p>
         <ul>
             <li>See the Map: <a target="_blank" href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map" />U.S. Cancer Rates by County</a>
             </li>
@@ -139,15 +168,14 @@
             </li>
         </ul>
         <br>
-        <br>
+        
         <br>
         <br>
     </section>
     <section class="Project">
         <a href="Maps/PCTmap_DevinBartley_v02.pdf"><img src="images/Thumbs/PCT_Thumb.jpg" alt="PCT Map" class="project-image-portrait"></a>
         <h3><a target="_blank" href="Maps/PCTmap_DevinBartley_v02.pdf">The Pacific Crest Trail - Displayed on Erwin Raisz' Landforms of the United States</a></h3>
-        <p>This map is an example of...</p>
-            <p>This map was created by...</p>
+        <p>This map was created by georeferencing the iconic Landforms of the United States by Erwin Raisz in QGIS, and then overlaying Pacific Crest Trail Linework and Natural Earth Administrative boundaries on top. I used Didot typface for the map and highlighted the states that the trail passes through in a shade of green that matches the trail logo.</p>
         <ul>
             <li>See the Map: <a target="_blank" href="maps/PCTmap_DevinBartley_v02.pdf" />Pacific Crest Trail on Landforms of the United States</li>
             <li>Data Source: <a target="_blank" href="" />Erwin Raisz</li>
