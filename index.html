@@ -3,7 +3,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
 <link href='https://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'> 
-<link href='https://fonts.googleapis.com/css?family=Work+Sans:400,900' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Work+Sans:300,900' rel='stylesheet' type='text/css'>
 
 <style>
     @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -55,7 +55,7 @@
     }
     
     p {
-        font-size: 1.2em;
+        font-size: 1.0em;
         color: #3b3a36;
         font-family: 'Work Sans', sans-serif;
     }
@@ -128,7 +128,7 @@
         <h2>Web Cartography by Devin Bartley</h2>
     </header>
     <section class="Project">
-        <a href="http://devinleebartley.github.io/Zero-Emissions-Power/"><img src="images/Thumbs/PowerPlants_Thumb2.jpg" alt="Power Plant Map" class="project-image" /></a>
+        <a href="http://devinleebartley.github.io/Zero-Emission-Power/"><img src="images/Thumbs/PowerPlants_Thumb2.jpg" alt="Power Plant Map" class="project-image" /></a>
         <h3><a target = "_blank" href="http://devinleebartley.github.io/Zero-Emission-Power/">Map of Zero Emission Power Plants in the United States</a></h3>
         <p>This is a Leaflet.js based web map with interactive features created in JavaScript. The map was created by converting the power generation capcity values to proportional symbols. In JavaScript I created a spotlight filter with a 500 km radius that appears when the user clicks on the map. The filter also summarizes information about power generation capacities visible within the spotlight.</p>
         <ul>
@@ -138,13 +138,14 @@
             <li>GitHub Repo: <a href="https://github.com/DevinLeeBartley/Zero-Emission-Power"/> GitHub - Zero Emission Power Plants </a>
             </li>
         </ul>
-                <br>
+        <br>
+        <br>
         
     </section>
     <section class="Project">
         <a href="Maps/BreweriesMap_v3.pdf"><img src="images/Thumbs/brewery_thumb.jpg" alt="Brewery Map" class="project-image" /></a>
         <h3><a target="_blank" href="Maps/BreweriesMap_v3.pdf"> Map of Breweries in North America</a></h3>
-        <p>This map is a hexbin heat map created by using a spatial join method. The hexbin data and cartographic styling were completed in QGIS. Since the hexbin areas are of equal size, they produce a visually appealing heat map showing the density of points by area. 
+        <p>This map is a hexbin heat map created in QGIS by using a spatial join method. The map demonstrates that hexbins create a visually appealing heat map highlighting brewing culture hotspots around the country. 
         <br>
         </p>
         <ul>
@@ -156,11 +157,13 @@
         <br>
         <br>
         <br>
+        <br>
+        <br>
     </section>
     <section class="Project">
         <a href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map"><img src="images/Thumbs/Cancer_Thumb.jpg" alt="Cancer Rate Map" class="project-image" /></a>
         <h3><a target="_blank" href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map">Map of Cancer Rates by County in the United States</a></h3>
-        <p>This map was created in CartoDB by joining the cancer profiles tables to US Census Bureau Tiger linework. The map showcases custom labels and color schemes created using CSS and HTML within the CartoDB framework. I reprojected the map to Albers Equal Area by using an SQL query.</p>
+        <p>This map was created in CartoDB by joining the cancer profiles tables to US Census Bureau Tiger linework. The map showcases custom labels and color schemes created using CSS and HTML within the CartoDB framework. The map interactivity allows the user to investigate cancer rates for all counties in the country, and the counties with the highest and lowest rates are clearly labelled. Using SQL, I reprojected the map to the Albers Equal Area projection to escape the ubiquitous Web Mercator projection.</p>
         <ul>
             <li>See the Map: <a target="_blank" href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map" />Cancer Rates by County in the United States</a>
             </li>
@@ -168,17 +171,18 @@
             </li>
         </ul>
         <br>
-        
+        <br>
         <br>
         <br>
     </section>
     <section class="Project">
         <a href="Maps/PCTmap_DevinBartley_v02.pdf"><img src="images/Thumbs/PCT_Thumb.jpg" alt="PCT Map" class="project-image-portrait"></a>
         <h3><a target="_blank" href="Maps/PCTmap_DevinBartley_v02.pdf">Map of The Pacific Crest Trail - Displayed on Erwin Raisz' Landforms of the United States</a></h3>
-        <p>This map was created by georeferencing the iconic Landforms of the United States by Erwin Raisz in QGIS, and then overlaying Pacific Crest Trail Linework and Natural Earth Administrative boundaries on top. I used Didot typface for the map and highlighted the states that the trail passes through in a shade of green that matches the trail logo.</p>
+        <p>This map was created by georeferencing the iconic Landforms of the United States by Erwin Raisz in QGIS, and then overlaying Pacific Crest Trail Linework and Natural Earth Administrative boundaries on top. I used <a target="_blank" href="https://en.wikipedia.org/wiki/Didot_(typeface)" />Didot</a> typface for the map and highlighted the states that the trail passes through in a shade of green that matches the trail logo.</p>
         <ul>
-            <li>See the Map: <a target="_blank" href="maps/PCTmap_DevinBartley_v02.pdf" />Pacific Crest Trail on Landforms of the United States</li>
-            <li>Data Source: <a target="_blank" href="" />Erwin Raisz</li>
+            <li>See the Map: <a target="_blank" href="maps/PCTmap_DevinBartley_v02.pdf" />Pacific Crest Trail on Landforms of the United States </a></li>
+            <li>Data Source: <a target="_blank" href="http://www.fs.usda.gov/pct/" />US Forest Service </a>
+            </li>
         </ul>
     </section>
 </body>
