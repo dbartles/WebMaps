@@ -1,184 +1,215 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<title>Devin Bartley Map Portfolio</title>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
-<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8">
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <title>Devin Bartley Map Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 
-<style>
-    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-    
-    body {
-        background: whitesmoke;
-        font-family: 'Ubuntu', sans-serif;
-    }
-    
-    header {
-        width: 100%;
-        min-width: 800px;
-        margin: 0 auto;
-        background: #c0dfd9;
-        padding: 15px 0 20px;
-        -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-	    -moz-animation:fadeIn ease-in 1;
-	    animation:fadeIn ease-in 1;
-        -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	    -moz-animation-fill-mode:forwards;
-	    animation-fill-mode:forwards;
- 
-	    -webkit-animation-duration:1s;
-	    -moz-animation-duration:1s;
-	    animation-duration:1s;
-    }
-    
-    footer {
-        width: 100%;
-        min-width: 800px;
-        margin: 0 auto;
-        background: #c0dfd9;
-        padding: 10px 0 10px;
-    }
-    
-    h1 {
-        font-family: 'Ubuntu', sans-serif;
-        color: #375671;
-        width: 80%;
-        margin: 0 auto;
-        color: #312c32;
-    }
-    
-    h2 {
-        font-family: 'Ubuntu', sans-serif;
-        color: #375671;
-        width: 80%;
-        margin: 0 auto;
-        color: #312c32;
-    }
-    
-    h3 {
-        font-family: 'Ubuntu', sans-serif;
-        color: #312c32
-    }
-    
-    p {
-        font-size: 0.9em;
-        color: #3b3a36;
-        font-family: 'Ubuntu', sans-serif;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        margin-right: 50px;
-        margin-left: 0px;
-    }
-    
-    ul {
-        list-style-type: none;
-        font-size: .9em;
-        color: #375671;
-        line-height: 1.0em;
-        padding: 0px;
-    }
-    
-    a,
-    a:visited {
-        color: #312c32;
-    }
-    
-    section > div {
-        overflow-y: auto;
-    }
-    
-    .project {
-        width: 80%;
-        min-width: 800px;
-        height: 100%;
-        margin: 35px auto;
-    }
-    .project:after{
-        content: "";
-        display: table;
-        clear: both;
-    }
-    .project-image {
-        width: 388px;
-        height: 240px;
-        background: white;
-        float: left;
-        margin-right: 20px;
-        margin-top: 10px;
-        border: 2px solid #dddddd;
-        opacity: 1;
-        transition: opacity .25s ease-in-out;
-        -moz-transition: opacity .25s ease-in-out;
-        -webkit-transition: opacity .25s ease-in-out;
-    }
-    .project-image:hover {
-       opacity: 0.5;
-    }
-    
-    .project-image-portrait {
-        width: 230px;
-        height: 348px;
-        background: white;
-        float: left;
-        margin-right: 95px;
-        margin-left: 85px;
-        border: 2px solid #dddddd;
-        opacity: 1;
-        transition: opacity .25s ease-in-out;
-        -moz-transition: opacity .25s ease-in-out;
-        -webkit-transition: opacity .25s ease-in-out;
-    }
-    .project-image-portrait:hover {
-       opacity: 0.5;
-    }
-
-
-</style>
+    <style>
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-moz-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        body {
+            background: whitesmoke;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        
+        header {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: #c0dfd9;
+            padding: 15px 0 20px;
+            -webkit-animation: fadeIn ease-in 1;
+            /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+            -moz-animation: fadeIn ease-in 1;
+            animation: fadeIn ease-in 1;
+            -webkit-animation-fill-mode: forwards;
+            /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+            -moz-animation-fill-mode: forwards;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+        }
+        
+        footer {
+            width: 100%;
+            min-width: 800px;
+            margin: 0 auto;
+            background: #c0dfd9;
+            padding: 10px 0 10px;
+        }
+        
+        h1 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: #312c32;
+        }
+        
+        h2 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #375671;
+            width: 80%;
+            margin: 0 auto;
+            color: #312c32;
+        }
+        
+        h3 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #312c32
+        }
+        
+        f1 {
+            font-family: 'Ubuntu', sans-serif;
+            color: #312c32;
+            font-size: 0.8em;
+            margin-left: 150px;
+        }
+        
+        p {
+            font-size: 0.9em;
+            color: #3b3a36;
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 50px;
+            margin-left: 0px;
+        }
+        
+        ul {
+            list-style-type: none;
+            font-size: .9em;
+            color: #375671;
+            line-height: 1.0em;
+            padding: 0px;
+        }
+        
+        a,
+        a:visited {
+            color: #312c32;
+        }
+        
+        section > div {
+            overflow-y: auto;
+        }
+        
+        .project {
+            width: 80%;
+            min-width: 800px;
+            height: 100%;
+            margin: 35px auto;
+        }
+        
+        .project:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .project-image {
+            width: 388px;
+            height: 240px;
+            background: white;
+            float: left;
+            margin-right: 20px;
+            margin-top: 10px;
+            border: 2px solid #dddddd;
+            opacity: 1;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+        }
+        
+        .project-image:hover {
+            opacity: 0.5;
+        }
+        
+        .project-image-portrait {
+            width: 230px;
+            height: 348px;
+            background: white;
+            float: left;
+            margin-right: 95px;
+            margin-left: 85px;
+            border: 2px solid #dddddd;
+            opacity: 1;
+            transition: opacity .25s ease-in-out;
+            -moz-transition: opacity .25s ease-in-out;
+            -webkit-transition: opacity .25s ease-in-out;
+        }
+        
+        .project-image-portrait:hover {
+            opacity: 0.5;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>MAP672: Programming for Web Mapping</h1>
+        <h1>Programming for Web Mapping</h1>
         <h2>Web Cartography by Devin Bartley</h2>
     </header>
     <section class="Project">
         <a href="http://devinleebartley.github.io/Zero-Emission-Power/"><img src="images/Thumbs/PowerPlants_Thumb3.png" alt="Power Plant Map" class="project-image" /></a>
         <div>
             <h3><a target = "_blank" href="http://devinleebartley.github.io/Zero-Emission-Power/">Map of Zero Emission Power Plants in the United States</a></h3>
-            <p>This is a LeafletJS based web map with interactive features created in JavaScript. The map was created by converting the spreadsheet of power generation capacity values to proportional symbols. In JavaScript I then created a spotlight filter with a 500 km radius that appears when the user clicks on the map. The filter also summarizes information about total power generation capacities visible within the spotlight extent.
-            Additional interactive features created using Javascript include the legend that allows for layers to be turned on and off, and the ability to click on any power plant and get more information about it.The code I used to create this map is viewable in this <a href="https://github.com/DevinLeeBartley/Zero-Emission-Power"/> GitHub repository</a>.</p>
+            <p>This is a LeafletJS based web map with interactive features created in JavaScript. The map was created by converting the spreadsheet of power generation capacity values to proportional symbols. In JavaScript I then created a spotlight filter with a 500 km radius that appears when the user clicks on the map. The filter also summarizes information about total power generation capacities visible within the spotlight extent. Additional interactive features created using Javascript include the legend that allows for layers to be turned on and off, and the ability to click on any power plant and get more information about it.The code I used to create this map is viewable in this <a href="https://github.com/DevinLeeBartley/Zero-Emission-Power" /> GitHub repository</a>.</p>
             <ul>
                 <li> Created In: <a href="https://leafletjs.com/" target="_blank">LeafletJS</a> <a href="https://javascript.com/" target="_blank">Javascript</a> <a href="http://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a> <a href="http://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a> <a href="http://brackets.io/" target="_blank">Brackets</a></li>
                 <br>
                 <li>See the Map: <a target="_blank" href="http://devinleebartley.github.io/Zero-Emission-Power/" /> Zero Emission Power Plants in the United States</a>
                 </li>
-                <li>Data Source: <a href="http://www.eia.gov/electricity/data/eia923/" />US Energy Information Administration</a></li>
+                <li>Data Source: <a href="http://www.eia.gov/electricity/data/eia923/" />US Energy Information Administration</a>
+                </li>
                 <br>
                 <br>
-
             </ul>
-      </div>  
+        </div>
     </section>
-
     <section class="Project">
         <a href="Maps/BreweriesMap_v3.pdf"><img src="images/Thumbs/Brewery_thumb2.png" alt="Brewery Map" class="project-image" /></a>
         <div>
             <h3><a target="_blank" href="Maps/BreweriesMap_v3.pdf"> Map of Breweries in North America</a></h3>
-            <p>This map started with a spreadsheet of XY locations for breweries downloaded from the <a target="_blank" href="http://www.poi-factory.com/" />POI Factory</a>. The data is displayed as a hexbin heat map created in QGIS by using a spatial join method. This is a great demonstration of how hexbins can create a visually appealing heat map highlighting phenomenon such as brewing industry hotspots around the country.    
+            <p>This map started with a spreadsheet of XY locations for breweries downloaded from the <a target="_blank" href="http://www.poi-factory.com/" />POI Factory</a>. The data is displayed as a hexbin heat map created in QGIS by using a spatial join method. This is a great demonstration of how hexbins can create a visually appealing heat map highlighting phenomenon such as brewing industry hotspots around the country.
             </p>
             <ul>
                 <li> Created In: <a href="http://www.qgis.org/en/site/" target="_blank">QGIS</a>
-                <br>
-                <br>
-                <li>See the Map: <a target="_blank" href="Maps/BreweriesMap_v3.pdf" />Breweries in North America</a>
-                </li>
-                <li>Data Source: <a target="_blank" href="http://www.poi-factory.com/" />POI Factory</a>
-                </li>
-                
+                    <br>
+                    <br>
+                    <li>See the Map: <a target="_blank" href="Maps/BreweriesMap_v3.pdf" />Breweries in North America</a>
+                    </li>
+                    <li>Data Source: <a target="_blank" href="http://www.poi-factory.com/" />POI Factory</a>
+                    </li>
             </ul>
             <br>
             <br>
@@ -187,7 +218,6 @@
         </div>
     </section>
     <section class="Project">
-        
         <a href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map"><img src="images/Thumbs/Cancer_Thumb4.jpg" alt="Cancer Rate Map" class="project-image" /></a>
         <div>
             <h3><a target="_blank" href="https://dbartley.cartodb.com/viz/186f226c-96d0-11e5-99ec-0e674067d321/public_map">Map of Cancer Rates by County in the United States</a></h3>
@@ -206,7 +236,6 @@
         </div>
     </section>
     <section class="Project">
-        
         <a href="Maps/PCTmap_DevinBartley_v02.pdf"><img src="images/Thumbs/PCT_Thumb2.jpg" alt="PCT Map" class="project-image-portrait"></a>
         <div>
             <h3><a target="_blank" href="Maps/PCTmap_DevinBartley_v02.pdf">Map of The Pacific Crest Trail - Displayed on Landforms of the United States by Erwin Raisz</a></h3>
@@ -214,25 +243,26 @@
             <ul>
                 <li> Created In: <a href="http://www.qgis.org/en/site/" target="_blank">QGIS</a> </li>
                 <br>
-                <li>See the Map: <a target="_blank" href="maps/PCTmap_DevinBartley_v02.pdf" />Pacific Crest Trail on Landforms of the United States </a></li>
+                <li>See the Map: <a target="_blank" href="maps/PCTmap_DevinBartley_v02.pdf" />Pacific Crest Trail on Landforms of the United States </a>
+                </li>
                 <li>Data Source: <a target="_blank" href="http://www.fs.usda.gov/pct/" />US Forest Service </a>
                 </li>
             </ul>
         </div>
     </section>
-</section>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <footer>
-        <h2>This page was created by Devin Bartley using HTML, CSS, and Javascript on March 22nd, 2016</h2>
+        <f1>This page was created by Devin Bartley using HTML, CSS, and Javascript on March 22nd, 2016</f1>
     </footer>
 </body>
 
